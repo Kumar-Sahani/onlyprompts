@@ -1,21 +1,28 @@
-# Next.js 13 Full Course 2023 | Build and Deploy a Full Stack App Using the Official React Framework
-![AI Prompt Sharing](https://i.ibb.co/9pQNZZy/Thumbnail-27.png)
+Installation:
+After cloning the project, cd into it and install all the dependencies using npm install.
 
-## Introduction
-Next.js recently became the official React framework as outlined in React docs. In this course, you'll learn the most important Next.js concepts and how they fit into the React ecosystem. Finally, you'll put your skills to the test by building a modern full-stack Next 13 application.
- 
-In this video, you'll learn:
-- Next.js 13 App Folder Structure
-- Next.js 13 Client Components vs Server Components
-- Next.js 13 File-based Routing (including dynamic and nested routes)
-- Next.js 13 page, layout, loading, and error Special Files
-- Next.js 13 Serverless Route Handlers (Next API, Full Stack Apps)
-- Next.js 13 Metadata and Search Engine Optimization (SEO)
-- Three ways to fetch data in Next.js:
-   - Server Side Rendering (SSR),
-   - Static Site Generation (SSG)
-   - Incremental Static Generation (ISR)
+Set up:
+Open the project in your compiler and create a .env file in the root directory and add the following variable in the .env file
 
-## Want to land your dream programming job in 3 - 6 months?
-⭐ JSM Masterclass Experience - https://jsmastery.pro/masterclass
-Become a Software Engineer. Guaranteed.
+GOOGLE_ID=
+GOOGLE_CLIENT_SECRET=
+
+MONGODB_URI=
+
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_URL_INTERNAL=http://localhost:3000
+NEXTAUTH_SECRET= 
+
+
+Here how you can get the following value for the above variables:
+
+GOOGLE_ID and GOOGLE_CLIENT_SECRET:
+You can go to console.cloud.google.com and generate these keys from your own google account
+
+MONGODB_URI:
+Make a account in mongoDB atlas and create a cluster, project, database and then connect with that database using the driver's URI
+
+NEXTAUTH_SECRET
+For mac, in your terminal you can simply run:
+openssl rand -base64 32 
+But for windows you can try the same command in online open ssl
